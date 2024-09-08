@@ -58,7 +58,7 @@ export default function Contact() {
             rows={4}
             name="message"
             placeholder="Share your thoughts"
-            className="border-b-2 border-stone-400 py-4 px-3 outline-none font-medium bg-inherit text-stone-300"
+            className="border-b-2 border-stone-400 py-4 px-3 outline-none font-medium bg-inherit text-stone-300 "
           />
 
           <button

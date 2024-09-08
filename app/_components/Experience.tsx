@@ -66,11 +66,16 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => (
 
 export default function Experience() {
   return (
-    <section id="experience" className="items-center bg-slate-300 pl-20 py-20">
+    <section
+      id="experience"
+      className="items-center bg-slate-300 pl-20 py-20 pr-4"
+    >
       <h3 className="text-md uppercase font-medium -mb-1">
         What I've done so far
       </h3>
-      <h2 className="text-7xl uppercase font-bold mb-32">Experience</h2>
+      <h2 className="text-6xl md:text-7xl uppercase font-bold mb-32">
+        Experience
+      </h2>
 
       <VerticalTimeline className="vertical-timeline-custom-line ">
         {experiences.map((experience, index) => (

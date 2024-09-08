@@ -3,7 +3,7 @@ export const main_title = "Software Engineer";
 export const titles = [
   "Web Developer",
   "Data Engineer",
-  "Full-Stack Developer",
+  "Full-Stack Dev",
   "AI Enthusiast",
 ];
 

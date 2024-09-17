@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="h-screen items-center bg-black flex flex-col xl:flex-row text-slate-300 xl:pl-32 py-20"
+      className="h-screen items-center bg-black flex flex-col md:flex-row text-slate-300 md:pl-32 py-20"
     >
       <div className="flex-[0.75] bg-neutral-800 p-8 rounded-2xl">
         <h3 className="text-md uppercase font-medium mb-3">
@@ -76,7 +76,7 @@ export default function Contact() {
           </button>
         </form>
       </div>
-      <div className="flex flex-[0.35] xl:flex-col xl:m-20 mt-10 gap-10 items-center">
+      <div className="flex flex-[0.35] md:flex-col md:m-20 mt-10 gap-10 items-center">
         <a
           href="https://github.com/maheshc7/"
           target="_blank"

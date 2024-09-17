@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-screen items-center pl-20 bg-black text-slate-300 py-20 pr-4"
+      className="min-h-screen items-center pl-5 lg:pl-20 bg-black text-slate-300 py-20 pr-4"
     >
       <h3 className="text-md uppercase font-medium -mb-1">Technologies</h3>
       <h2 className="text-7xl uppercase font-bold mb-10">Skills</h2>

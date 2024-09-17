@@ -68,7 +68,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="items-center bg-slate-300 pl-20 py-20 pr-4"
+      className="items-center bg-slate-300 pl-5 lg:pl-20 py-20 pr-4"
     >
       <h3 className="text-md uppercase font-medium -mb-1">
         What I've done so far

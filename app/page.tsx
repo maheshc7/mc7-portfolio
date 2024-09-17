@@ -9,7 +9,7 @@ import Navbar from "./_components/Navbar";
 export default function Home() {
   return (
     <main>
-      <div>
+      <div className="overflow-x-hidden">
         <Navbar />
         <Hero />
         <About />

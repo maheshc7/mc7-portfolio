@@ -18,9 +18,9 @@ export default function Home() {
         <Experience />
         <Contact />
       </div>
-      <a href="https://www.vecteezy.com/free-vector/mc-logo">
+      {/* <a href="https://www.vecteezy.com/free-vector/mc-logo">
         Mc Logo Vectors by Vecteezy
-      </a>
+      </a> */}
     </main>
   );
 }

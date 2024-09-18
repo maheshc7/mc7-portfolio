@@ -13,7 +13,7 @@ export default function Contact() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: "3024dd77-984c-4584-99b0-3a92b3694b77",
+        access_key: process.env.WEB3FORMS_ACCESS_KEY,
         name: e.target.name.value,
         email: e.target.email.value,
         message: e.target.message.value,

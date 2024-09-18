@@ -1,30 +1,36 @@
 "use client";
 
 import { GitHub, LinkedIn, X } from "@mui/icons-material";
+import { FormEvent } from "react";
 import { BsSend } from "react-icons/bs";
 
 export default function Contact() {
-  async function handleSubmit(e) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const form = e.currentTarget;
+
+    const response = await fetch("/api/form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: process.env.WEB3FORMS_ACCESS_KEY,
-        name: e.target.name.value,
-        email: e.target.email.value,
-        message: e.target.message.value,
+        name: form.fullname.value,
+        email: form.email.value,
+        message: form.message.value,
       }),
     });
+
     const result = await response.json();
-    document.getElementById("contact-form").reset();
+    if (form) {
+      form.reset();
+    }
+
     if (result.success) {
       console.log(result);
     }
   }
+
   return (
     <section
       id="contact"
@@ -43,7 +49,7 @@ export default function Contact() {
         >
           <input
             type="text"
-            name="name"
+            name="fullname"
             placeholder="Your Name"
             className="py-4 px-3 outline-none border-b-2 border-stone-400 font-medium bg-inherit text-stone-300"
           />

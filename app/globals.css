@@ -49,6 +49,11 @@ body {
   );
 }
 
+.vertical-timeline-element-date {
+  color: #292929;
+  text-transform: uppercase;
+}
+
 html {
   scroll-behavior: smooth;
 }

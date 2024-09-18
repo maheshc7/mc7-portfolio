@@ -33,11 +33,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => (
     contentArrowStyle={{
       borderRight: "7px solid  #232631",
     }}
-    date={
-      <div>
-        <h3 className="uppercase text-md font-bold ">{experience.date}</h3>
-      </div>
-    }
+    date={experience.date}
     iconStyle={{
       background: experience.iconBg,
       // boxShadow:
